@@ -30,17 +30,17 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/chat-flight"
-              className="inline-block px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
-            >
-              Flight Booking (Tool Calling)
-            </Link>
-
-            <Link
               href="/chat-transation"
               className="inline-block px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition"
             >
               Transaction Extraction (Tool Calling)
+            </Link>
+
+            <Link
+              href="/chat-flight"
+              className="inline-block px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+            >
+              Flight Booking (Tool Calling)
             </Link>
           </div>
         </section>
