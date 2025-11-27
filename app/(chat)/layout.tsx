@@ -2,7 +2,6 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/chat-basic", label: "Chat Basic" },
   { href: "/chat-transaction", label: "Chat Transaction" },
   { href: "/chat-flight", label: "Chat Flight" }
@@ -27,6 +26,13 @@ export default function RootLayout({
         ))}
       </nav>
       <main className="w-full max-w-2xl">{children}</main>
+
+      <Link
+        href="/"
+        className="transition-colors hover:text-neutral-900 text-neutral-500 mt-10"
+      >
+        Home
+      </Link>
     </div>
   );
 }
