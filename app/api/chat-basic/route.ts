@@ -1,4 +1,4 @@
-import { openrouter } from "@/lib";
+import { openrouter } from "@/lib/model";
 import { streamText, UIMessage, convertToModelMessages } from "ai";
 
 export async function POST(req: Request) {

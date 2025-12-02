@@ -1,4 +1,4 @@
-import { openrouter } from "@/lib";
+import { openrouter } from "@/lib/model";
 import {
   bookFlightSchema,
   findFlights,

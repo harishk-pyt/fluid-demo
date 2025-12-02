@@ -2,7 +2,7 @@
 
 import { generateObject } from "ai";
 import { z } from "zod";
-import { openrouter } from ".";
+import { openrouter } from "./model";
 
 const TransactionSchema = z.object({
   amount: z
