@@ -7,7 +7,7 @@ import { FormEvent, useState } from "react";
 export default function Page() {
   const { messages, status, sendMessage } = useChat({
     transport: new DefaultChatTransport({
-      api: `/api/chat-basic`
+      api: `/api/chat-basic` // /api/chat
     })
   });
 

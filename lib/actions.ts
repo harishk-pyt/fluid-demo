@@ -25,6 +25,8 @@ export async function extractAction(_: unknown, formData: FormData) {
   const sms = formData.get("sms");
   if (typeof sms !== "string") return { error: "Invalid input" };
 
+  // console.log(JSON.stringify(z.toJSONSchema(TransactionSchema), null, 4));
+
   try {
     const result = await generateObject({
       model: openrouter("x-ai/grok-4-fast"),

@@ -3,7 +3,7 @@ import "dotenv/config";
 
 async function callLLM(
   messages: Array<{ role: string; content: string }>,
-  model = "openai/gpt-5-nano"
+  model = "x-ai/grok-4-fast"
 ) {
   const response = await fetch(
     "https://openrouter.ai/api/v1/chat/completions",
